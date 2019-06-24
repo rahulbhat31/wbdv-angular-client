@@ -63,9 +63,6 @@ import { PageColumnComponent } from './page-column/page-column.component';
     CourseNavigatorServiceClient,
     WebsiteService,
     PageService
-    // Model,
-    // LayoutService
-    // PageModel
   ],
   bootstrap: [AppComponent]
 })
