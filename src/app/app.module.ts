@@ -61,12 +61,21 @@ import { RowToolbarComponentComponent } from './row-toolbar-component/row-toolba
     FormsModule
   ],
   providers: [
-    UserService,
-    CourseNavigatorServiceClient,
-    WebsiteService,
-    PageService,
-    LayoutService,
-    Model
+    { provide: UserService, useClass: UserService },
+    { provide: CourseNavigatorServiceClient, useClass: CourseNavigatorServiceClient },
+
+    { provide: WebsiteService, useClass: WebsiteService },
+    { provide: PageService, useClass: PageService },
+
+    { provide: LayoutService, useClass: LayoutService },
+    { provide: Model, useClass: Model },
+
+    // UserService,
+    // CourseNavigatorServiceClient,
+    // ,
+    // PageService,
+    // LayoutService,
+    // Model
   ],
   bootstrap: [AppComponent]
 })

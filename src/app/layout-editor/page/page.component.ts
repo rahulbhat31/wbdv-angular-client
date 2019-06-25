@@ -8,12 +8,12 @@ import Model from '../../models/Model';
 })
 export class PageComponent implements OnInit {
 
-  rows: Row[] = [];
+  // rows: Row[] = [];
 
   constructor(private model: Model) { }
 
   ngOnInit() {
-    this.rows = this.model.getAllRows();
+    // this.rows = this.model.getAllRows();
     // this.model.findPageById('page1')
     //   .then(page => this.rows = page.rows);
   }
