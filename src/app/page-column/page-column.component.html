@@ -1,4 +1,16 @@
-  New Column
-<button>
+<app-column-toolbar [column]="column"
+                    [row]="row">
+
+</app-column-toolbar>
+<app-widget
+  [column]="column"
+  [row]="row"
+
+  [widget]="widget"
+  *ngFor="let widget of column.widgets">
+</app-widget>
+
+<button (click)="addWidget()">
   Add Widget
 </button>
+

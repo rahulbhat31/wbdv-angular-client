@@ -19,15 +19,15 @@ export class WidgetToolbarComponent implements OnInit {
   }
 
   deleteWidget() {
-    this.model.deleteWidget(this.row, this.col, this.widget)
+    this.model.deleteWidget(this.row, this.col, this.widget);
   }
 
   moveWidgetUp() {
-    this.model.moveWidgetUp(this.row, this.col, this.widget)
+    this.model.moveWidgetUp(this.row, this.col, this.widget);
   }
 
   moveWidgetDown() {
-    this.model.moveWidgetDown(this.row, this.col, this.widget)
+    this.model.moveWidgetDown(this.row, this.col, this.widget);
   }
 
   moveWidgetLeft() {
@@ -36,5 +36,9 @@ export class WidgetToolbarComponent implements OnInit {
 
   moveWidgetRight() {
 
+  }
+
+  onChange (value) {
+    this.widget.type = value;
   }
 }

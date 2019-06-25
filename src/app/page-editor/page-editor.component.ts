@@ -25,12 +25,11 @@ export class PageEditorComponent implements OnInit {
       this.websiteId = params.websiteId;
       this.pageId = params.pageId;
       this.service.findPageById(this.websiteId, this.pageId)
-        .then(page => this.page = page)
-    })
+        .then(page => this.page = page);
+    });
   }
 
-  appendRow = () =>
-  {
+  appendRow = () => {
     this.page.rows.push({
       title: 'New Row',
       columns: []

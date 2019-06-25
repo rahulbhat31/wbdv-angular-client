@@ -28,7 +28,8 @@ import PageService from './services/PageService';
 import { PageEditorComponent } from './page-editor/page-editor.component';
 import { PageRowComponent } from './page-row/page-row.component';
 import { PageColumnComponent } from './page-column/page-column.component';
-// import { WidgetEditorComponent } from './widget-editor/widget-editor.component';
+import { WidgetEditorComponent } from './layout-editor/widgets/widget-editor/widget-editor.component';
+import { RowToolbarComponentComponent } from './row-toolbar-component/row-toolbar-component.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { PageColumnComponent } from './page-column/page-column.component';
     PageEditorComponent,
     PageRowComponent,
     PageColumnComponent,
-    // WidgetEditorComponent
+    WidgetEditorComponent,
+    RowToolbarComponentComponent
   ],
   imports: [
     routing,
@@ -62,7 +64,9 @@ import { PageColumnComponent } from './page-column/page-column.component';
     UserService,
     CourseNavigatorServiceClient,
     WebsiteService,
-    PageService
+    PageService,
+    LayoutService,
+    Model
   ],
   bootstrap: [AppComponent]
 })

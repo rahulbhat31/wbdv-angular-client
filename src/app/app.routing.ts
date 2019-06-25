@@ -7,11 +7,11 @@ import {PageComponent} from './layout-editor/page/page.component';
 import {WebsiteListComponent} from './website-list/website-list.component';
 import {PageListComponent} from './page-list/page-list.component';
 import {PageEditorComponent} from './page-editor/page-editor.component';
-// import {WidgetEditorComponent} from './widget-editor/widget-editor.component';
+import {WidgetEditorComponent} from './layout-editor/widgets/widget-editor/widget-editor.component';
 
 const appRoutes: Routes = [
   { path: 'layout', component: PageComponent },
-  // { path: 'layout/edit/widget/:wid', component: WidgetEditorComponent },
+  { path: 'layout/edit/widget/:wid', component: WidgetEditorComponent },
   { path: 'courses', component: CourseNavigatorComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
