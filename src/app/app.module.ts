@@ -60,6 +60,7 @@ import { RowToolbarComponentComponent } from './row-toolbar-component/row-toolba
     BrowserModule,
     FormsModule
   ],
+
   providers: [
     { provide: UserService, useClass: UserService },
     { provide: CourseNavigatorServiceClient, useClass: CourseNavigatorServiceClient },
