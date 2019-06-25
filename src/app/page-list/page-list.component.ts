@@ -20,7 +20,7 @@ export class PageListComponent implements OnInit {
       this.websiteId = params.websiteId;
       this.service.findPagesForWebsite(params.websiteId)
         .then(pages => this.pages = pages);
-    });
+    })
   }
 
   appendPage() {

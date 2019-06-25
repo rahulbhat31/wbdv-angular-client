@@ -1,11 +1,16 @@
 <app-column-toolbar [column]="column"
-                    [row]="row">
+                    [row]="row"
+                    [pageId]="pageId"
+                    [page]="page"
+                    [websiteId]="websiteId">
 
 </app-column-toolbar>
 <app-widget
   [column]="column"
   [row]="row"
-
+  [pageId]="pageId"
+  [page]="page"
+  [websiteId]="websiteId"
   [widget]="widget"
   *ngFor="let widget of column.widgets">
 </app-widget>

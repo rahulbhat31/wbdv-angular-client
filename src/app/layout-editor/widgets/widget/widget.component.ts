@@ -10,6 +10,9 @@ export class WidgetComponent implements OnInit {
   @Input() row
   @Input() column
   @Input() widget
+  @Input() pageId
+  @Input() page
+  @Input() websiteId
 
   constructor() { }
 
